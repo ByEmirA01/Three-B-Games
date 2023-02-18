@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59B20E87-40F6-4353-B81F-73F3D605BAF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>tbg</RootNamespace>
+    <AssemblyName>tbg</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aksiyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aksiyon.Designer.cs">
+      <DependentUpon>aksiyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bulmaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bulmaca.Designer.cs">
+      <DependentUpon>bulmaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuzdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuzdan.Designer.cs">
+      <DependentUpon>Cuzdan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doyunlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doyunlar.Designer.cs">
+      <DependentUpon>Doyunlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jrpg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jrpg.Designer.cs">
+      <DependentUpon>jrpg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategori.Designer.cs">
+      <DependentUpon>kategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicilar.Designer.cs">
+      <DependentUpon>kullanicilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kutuphane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kutuphane.Designer.cs">
+      <DependentUpon>Kutuphane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="macera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="macera.Designer.cs">
+      <DependentUpon>macera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="magaza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="magaza.Designer.cs">
+      <DependentUpon>magaza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oyunlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oyunlar.Designer.cs">
+      <DependentUpon>oyunlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profil.Designer.cs">
+      <DependentUpon>profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sepet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepet.Designer.cs">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="simülasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="simülasyon.Designer.cs">
+      <DependentUpon>simülasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="strateji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="strateji.Designer.cs">
+      <DependentUpon>strateji.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aksiyon.resx">
+      <DependentUpon>aksiyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bulmaca.resx">
+      <DependentUpon>bulmaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuzdan.resx">
+      <DependentUpon>Cuzdan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doyunlar.resx">
+      <DependentUpon>Doyunlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jrpg.resx">
+      <DependentUpon>jrpg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategori.resx">
+      <DependentUpon>kategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicilar.resx">
+      <DependentUpon>kullanicilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kutuphane.resx">
+      <DependentUpon>Kutuphane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="macera.resx">
+      <DependentUpon>macera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="magaza.resx">
+      <DependentUpon>magaza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oyunlar.resx">
+      <DependentUpon>oyunlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil.resx">
+      <DependentUpon>profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sepet.resx">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="simülasyon.resx">
+      <DependentUpon>simülasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="strateji.resx">
+      <DependentUpon>strateji.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_password_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_minimize_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_clear_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_store_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_apps_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_shopping_basket_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_person_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_file_upload_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dersnot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_sports_esports_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_apps_white_18dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_paid_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_settings_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_shopping_cart_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_delete_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_download_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_logout_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fk1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fs.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
